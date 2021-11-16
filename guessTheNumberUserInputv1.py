@@ -15,7 +15,8 @@ lower_limit = int(input("Enter the lower limit number: "))
 upper_limit= int(input("Enter the upper limit number: "))
 
 #Request another number if upper_limit is lower than lower_limit
-if upper_limit < lower_limit:
+##using if here brings an error after more than one iteration
+while upper_limit < lower_limit:
     upper_limit= int(input(f"Enter a number higher than {lower_limit}:"))
 
 #Assign random_number a random integer in the rangelower_limit to upper_limit
